@@ -1,4 +1,4 @@
-package Aplicacao;
+package aplicacao;
 
 import java.util.Locale;
 import java.util.Scanner;
@@ -8,6 +8,7 @@ import entidades.ContaTerminal;
 public class Programa {
 
 	public static void main(String[] args) {
+		
 		Locale.setDefault(Locale.US);
 		Scanner ler = new Scanner(System.in);
 
@@ -21,6 +22,7 @@ public class Programa {
 		System.out.print("Digite o saldo: ");
 		double saldo = ler.nextDouble();
 
+		System.out.println();
 		ContaTerminal contaTerminal = new ContaTerminal(numeroConta, numeroAgencia, nomeCliente, saldo);
 
 		System.out.println(contaTerminal);
